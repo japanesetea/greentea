@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Healthstyle JAPAN </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="image/favicon.ico" type="image/gif">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html#home" class="logo">
+      <!-- Image tag -->
+      <img src="image/logo.png"  style="vertical-align: middle;max-height: 40px;max-width: 40px;" alt="Healthstyle JAPAN">
+      <!-- Text "Healthstyle JAPAN" -->
+      <span style="vertical-align: middle;">Healthstyle JAPAN</span>
+    </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#products">products</a>
+        <a href="#features">features</a>
+        <!-- <a href="#categories">categories</a> -->
+        <a href="#aboutus">about</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn" style="position: relative;display: inline-block;"><span class="shopping-cart-number" style="color: var(--orange);font-size: 1.3rem;position: absolute;top: 0;right: 0;">0</span></div>
+        <div class="fas fa-user" id="login-btn"></div>
+        <!-- <div class="username" id="username" style="display: none;"></div> -->
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+
+    <!-- shopping cart starts -->
+    <div class="shopping-cart">
+        <div class="total">Total BDT: <span class="total-amount">0</span></div>
+        <a href="#" class="btn checkout-btn" id="checkout-btn">Checkout</a>
+    </div>
+    <!-- shopping cart ends -->
+
+
+     <!-- Buyer details starts -->
+    <form action="https://sheetdb.io/api/v1/5a0z0gegnb29v" method="POST" class="info-form orderdb-form" id="order-form orderdb-form">
+        <i id="cancel" class="far fa-times-circle cancel"></i>
+        <div style="display: none;">
+            <h3>Selected Item's details</h3><br>
+            <p id="selected-item-name"></p>
+            <p id="selected-item-price"></p>
+            <p id="selected-item-quantity"></p>
+            <p id="total-amount-shopping">TOAL: </p>
+        </div>
+        <h3>Your shipping details</h3>
+        <input type="name" required placeholder="your name" name="data[name]" class="box">
+        <input type="phone" required placeholder="your phone" name="data[phone]" class="box">
+        <input type="email" required placeholder="your email" name="data[email]" class="box">
+        <input type="address" required placeholder="your address" name="data[address]" class="box"><br><br>
+        <!-- <a href="#" class="btn" id="form-btn">Place your order</a> -->
+        <button type="submit" class="btn form-btn" id="form-btn">Submit</button>
+    </form>
+
+    <!-- Buyer details ends -->
+
+    <!-- order done massage starts -->
+
+    <!-- <div action="" class="order-massage">
+        <i id="cancel" class="far fa-times-circle cancel"></i>
+        <h2>Congratulations</h2>
+        <p>Your order is placed successfully.<span class="order-span"></span></p>
+    </div> -->
+
+
+    <!-- order done massage ends -->
+    <form action="" class="login-form" id="login-form">
+        <i id="cancel" class="far fa-times-circle cancel"></i>
+        <h3>login now</h3>
+        <input type="text" placeholder="your username" id="username" class="box">
+        <input type="password" placeholder="your password" id="password" class="box">
+        <p>forget your password <a id="forgot-btn" href="#">click here</a></p>
+        <p>don't have an account <a id="signup-btn" href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+    <form action="https://sheetdb.io/api/v1/0xzoluvui8zkc" method="post" id="sheetdb-form" class="signup-form sheetdb-form">
+        <i id="back-btn" class="fas fa-chevron-left left-icon"></i>
+        <h3>New here ?</h3>
+        <input type="text" placeholder="UserName" name="data[username]" class="box" required>
+        <input type="email" placeholder="Email Address" name="data[email]" class="box" required>
+        <input type="password" placeholder="Password" name="data[password]" class="box" required>
+        <input type="number" placeholder="Phone Number" name="data[number]" class="box" required>
+        <input type="number" placeholder="NID Number" name="data[NID]" class="box">
+        <input type="text" placeholder="Reference ID" name="data[Reference ID]" class="box">
+        <input type="submit" value="Sign up now" class="btn">
+    </form>
+
+    <form action="" class="forgot-form">
+        <i id="back-btn1" class="fas fa-chevron-left left-icon1"></i>
+        <h3>Forgot Password ?</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="submit" value="Recover now" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3><span>Healthstyle JAPAN </span><strong style="text-transform: uppercase;">Stay Fit, Be Happy</strong></h3>
+        <p>Your Ultimate Destination of Authentic Japanese Products<br> in Bangladesh.<br>
+            <br>
+        Stay connected, join our vibrant community, and boost your well-being.  
+        </p>
+        <a href="#products" class="btn" color="white;">shop now</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- features section starts  -->
+
+<!-- <section class="features" id="features">
+
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>fully organic</h3>
+            <p class="short-message">Our green tea is cultivated without synthetic chemicals...</p>
+            <p class="full-message" style="display: none;">Our green tea is cultivated without synthetic chemicals or GMOs, ensuring a pure and natural product. Certified by reputable organizations, it upholds eco-friendly farming practices, offering health benefits while preserving the environment's integrity.</p>
+            <a href="#" class="btn read-more">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>fast delivery</h3>
+            <p>We guarantee swift shipping, often within a short timeframe, ensuring prompt receipt of orders. Leveraging streamlined logistics and expedited shipping options, it caters to customers' preference for efficient and timely product arrival.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>easy payments</h3>
+            <p>We are offering hassle-free transaction processes, with diverse options like credit/debit cards and digital wallets, ensuring convenient and secure purchases. This user-friendly approach enhances the shopping experience, fostering customer satisfaction and loyalty.</p>
+            <a href="#" class="btn">read more</a>
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- <section class="features" id="features">
+
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>fully organic</h3>
+            <p class="short-message">Our green tea is cultivated without synthetic chemicals...</p>
+            <p class="full-message" style="display: none;">Our green tea is cultivated without synthetic chemicals or GMOs, ensuring a pure and natural product. Certified by reputable organizations, it upholds eco-friendly farming practices, offering health benefits while preserving the environment's integrity.</p>
+            <a href="#" class="btn read-more">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>fast delivery</h3>
+            <p class="short-message">We guarantee swift shipping, often within a short timeframe...</p>
+            <p class="full-message" style="display: none;">We guarantee swift shipping, often within a short timeframe, ensuring prompt receipt of orders. Leveraging streamlined logistics and expedited shipping options, it caters to customers' preference for efficient and timely product arrival.</p>
+            <a href="#" class="btn read-more">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>easy payments</h3>
+            <p class="short-message">We are offering hassle-free transaction processes...</p>
+            <p class="full-message" style="display: none;">We are offering hassle-free transaction processes, with diverse options like credit/debit cards and digital wallets, ensuring convenient and secure purchases. This user-friendly approach enhances the shopping experience, fostering customer satisfaction and loyalty.</p>
+            <a href="#" class="btn read-more">read more</a>
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- features section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> our <span>products</span> </h1>
+
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="image-container">
+                    <img src="image/11.png" alt="">
+                    <div class="buttons">
+                        <a href="#" class="btn add-to-cart-btn">Add to Cart</a>
+                        <a href="product1.html" class="btn product-details">Details</a>
+                    </div>
+                </div>
+                <h3>Itoen Oi Ocha Instant Green Tea with Matcha Powder</h3>
+                <div class="price">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                     Price: 740 BDT 
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image-container">
+                    <img src="image/22.png" alt="">
+                    <div class="buttons">
+                        <a href="#" class="btn add-to-cart-btn">Add to Cart</a>
+                        <a href="product2.html" class="btn product-details">Details</a>
+                    </div>
+                </div>
+                <h3>Itoen One Pot Eco Tea Bag Jasmine Tea</h3>
+                <div class="price">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                     Price: 1100 BDT 
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image-container">
+                    <img src="image/33.png" alt="">
+                    <div class="buttons">
+                        <a href="#" class="btn add-to-cart-btn">Add to Cart</a>
+                        <a href="product3.html" class="btn product-details">Details</a>
+                    </div>
+                </div>
+                <h3>Iyemon Genmaicha with Matcha</h3>
+                <div class="price">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                     Price: 950 BDT 
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image-container">
+                    <img src="image/44.png" alt="">
+                    <div class="buttons">
+                        <a href="#" class="btn add-to-cart-btn">Add to Cart</a>
+                        <a href="product4.html" class="btn product-details">Details</a>
+                    </div>
+                </div>
+                <h3>Iyemon Ryokucha with Matcha</h3>
+                <div class="price">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                     Price: 750 BDT 
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<!-- product list's second section is hide here -->
+    <div class="swiper product-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <div class="image-container">
+                    <img src="image/55.png" alt="">
+                    <div class="buttons">
+                        <a href="#" class="btn add-to-cart-btn">Add to Cart</a>
+                        <a href="product5.html" class="btn product-details">Details</a>
+                    </div>
+                </div>
+                <h3>Itoen Oi Ocha Japanese Green Tea</h3>
+                <div class="price">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                     Price: 700 BDT 
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image-container">
+                    <img src="image/66.png" alt="">
+                    <div class="buttons">
+                        <a href="#" class="btn add-to-cart-btn">Add to Cart</a>
+                        <a href="product6.html" class="btn product-details">Details</a>
+                    </div>
+                </div>
+                <h3>Itoen One Pot Eco Tea Bag, Green Tea</h3>
+                <div class="price">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                     Price: 1100 BDT 
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image-container">
+                    <img src="image/77.png" alt="">
+                    <div class="buttons">
+                        <a href="#" class="btn add-to-cart-btn">Add to Cart</a>
+                        <a href="product7.html" class="btn product-details">Details</a>
+                    </div>
+                </div>
+                <h3>Itoen Oi Ocha Dark Premium Green Tea</h3>
+                <div class="price"> 
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                     Price: 950 BDT
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image-container">
+                    <img src="image/88.png" alt="">
+                    <div class="buttons">
+                        <a href="#" class="btn add-to-cart-btn">Add to Cart</a>
+                        <a href="product8.html" class="btn product-details">Details</a>
+                    </div>
+                </div>
+                <h3>Itoen Oi Ocha Dark Premium Tea with Matcha</h3>
+                <div class="price">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                     Price: 1000 BDT 
+                </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <div class="image-container">
+                    <img src="image/99.png" alt="">
+                    <div class="buttons">
+                        <a href="#" class="btn add-to-cart-btn">Add to Cart</a>
+                        <a href="product9.html" class="btn product-details">Details</a>
+                    </div>
+                </div>
+                <h3>Itoen Oi Ocha Green Tea Bags</h3>
+                <div class="price"> 
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                     Price: 1100 BDT
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+<!-- products section ends -->
+
+
+
+<section class="features" id="features">
+
+    <h1 class="heading"> our <span>features</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/feature-img-1.png" alt="">
+            <h3>fully organic</h3>
+            <p class="short-message">Our green tea is cultivated without synthetic chemicals...</p>
+            <p class="full-message" style="display: none;">Our green tea is cultivated without synthetic chemicals or GMOs, ensuring a pure and natural product. Certified by reputable organizations, it upholds eco-friendly farming practices, offering health benefits while preserving the environment's integrity.</p>
+            <a href="#" class="btn read-more">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-2.png" alt="">
+            <h3>fast delivery</h3>
+            <p class="short-message">We guarantee swift shipping, often within a short timeframe...</p>
+            <p class="full-message" style="display: none;">We ensure fast shipping throughout all over Bangladesh, frequently delivering orders promptly. By utilizing streamlined logistics and expedited shipping options, we cater to our customers' preference for efficient and timely product arrival.</p>
+            <a href="#" class="btn read-more">read more</a>
+        </div>
+
+        <div class="box">
+            <img src="image/feature-img-3.png" alt="">
+            <h3>easy payments</h3>
+            <p class="short-message">We are offering hassle-free transaction processes...</p>
+            <p class="full-message" style="display: none;">We are offering hassle-free transaction processes, with diverse options like nogod, bkash & cash on delivery inside dhaka and ensuring convenient and secure purchases. This user-friendly approach enhances the shopping experience, fostering customer satisfaction and loyalty.</p>
+            <a href="#" class="btn read-more">read more</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- categories section starts  -->
+ <!-- product category is hidden here -->
+<!-- <section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/cat-1.png" alt="">
+            <h3>vegitables</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-2.png" alt="">
+            <h3>fresh fruits</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-3.png" alt="">
+            <h3>dairy products</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+        <div class="box">
+            <img src="image/cat-4.png" alt="">
+            <h3>fresh meat</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- categories section ends -->
+
+
+<!-- about section starts -->
+<section class="aboutus" id="aboutus">
+    
+    <h1 class="heading"> about <span>us</span> </h1>
+    <div class="aboutusdetails" id="aboutusdetails">
+        <p>"Healthstyle Japan" fosters well-being through the perfect blend of lifestyle and health. Our mission is to elevate your health style with authentic products sourced exclusively from Japan. With a vision to enhance the health style of the Bangladeshi community and promote their happiest and healthiest lifestyles.</p>
+        <img src="image/image1.jpg" alt="">
+    </div>
+
+</section>
+
+
+<!-- about section ends -->
+
+
+
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide box">
+                <img src="image/pic-1.png" alt="">
+                <p>The Itoen Oi Ocha Dark Premium Green Tea is praised for its rich, robust flavor and high-quality Japanese craftsmanship. While some enjoy its intense taste, others may find it too strong, making it a matter of personal preference.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>jubaer habibee</h3>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-2.png" alt="">
+                <p>The Itoen Oi Ocha Tea are favored for their convenience and authentic taste, providing a refreshing and aromatic experience. Users appreciate the ease of brewing and the consistent quality of each cup, making it a popular choice among green tea enthusiasts.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Afsana Nipa</h3>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-3.png" alt="">
+                <p>The Iyemon Genmaicha offers a harmonious blend of roasted brown rice, green tea, and matcha, creating a rich and flavorful infusion. Fans of this tea appreciate its unique nutty flavor and smooth finish, making it a delightful choice for both casual sipping.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>sumon hossain</h3>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/pic-4.png" alt="">
+                <p>The Iyemon Ryokucha with Matcha is revered for its vibrant green color, smooth taste, and delicate aroma. Enthusiasts of this tea cherish its refreshing and invigorating qualities, making it a beloved choice for moments of relaxation or rejuvenation.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <h3>Jhumor akter</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> our <span>blogs</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/blog-1.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="https://www.facebook.com/healthstylejapan" target="_blank"> <i class="fas fa-user"></i> by Admin </a>
+                    <a> <i class="fas fa-calendar"></i> 5th January, 2024 </a>
+                </div>
+                <h3>কেন দৈনন্দিন জীবনে গ্রীন টি গ্রহণ করা উচিত?</h3>
+                <p>একটি স্বাস্থ্যকর জীবনের অংশ হিসেবে গ্রীন টি আমাদের দৈনন্দিন রুটিনে অন্তর্ভুক্ত করার আগে এর উপকারিতা জানা অত্যন্ত গুরত্বপূর্ণ।<br>
+                     ১.  ত্বকের যত্ন<br>
+                     গ্রিন টি-তে থাকা অ্যান্টিঅক্সিডেন্ট UV ক্ষতি থেকে ত্বক কে রক্ষা করে এবং.......</p>
+                <a href="https://www.facebook.com/story.php?story_fbid=122095463090180512&id=61555415361954" target="_blank" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-2.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="https://www.facebook.com/healthstylejapan" target="_blank"> <i class="fas fa-user"></i> by Admin </a>
+                    <a> <i class="fas fa-calendar"></i> 1st March, 2024 </a>
+                </div>
+                <h3>গ্রীন টি পান করার নিয়ম</h3>
+                <p>আমাদের দেশের বহুল প্রচলিত পানীয় হলো দুধ চা,  রং/লিকার/ ব্ল্যাক টি এবং কফি। যারা একটু স্বাস্থ্য সচেতন তারা দুধ চা এর বদলে ব্ল্যাক টি বা ব্ল্যাক কফি বেশি পান করে থাকে। ব্ল্যাক টি পানের ক্ষেত্রে বেশিরভাগ সময় বিভিন্ন রকম মশলার ব্যাবহার হয়ে থাকে যেমন- এলাচি, দারচিনি, লং, তেজপাতা, আদা, পুদিনা পাতা, লেবু ইত্যাদি। এতে করে এর স্বাদ ও উপকারিতা.......</p>
+                <a href="https://www.facebook.com/story.php?story_fbid=122125229378180512&id=61555415361954" target="_blank" class="btn">read more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/blog-3.jpg" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="https://www.facebook.com/healthstylejapan" target="_blank"> <i class="fas fa-user"></i> by Admin </a>
+                    <a> <i class="fas fa-calendar"></i> 4th January, 2024 </a>
+                </div>
+                <h3>Why we should take Green tea?</h3>
+                <p>Understanding the numerous health benefits of green tea is essential before incorporating it into our daily routine for a healthier lifestyle.<br>
+                1. Improved Skin Health<br>
+                Antioxidants in green tea may contribute to healthier skin by protecting against UV damage and promoting.......</p>
+                <a href="https://www.facebook.com/story.php?story_fbid=122094799706180512&id=61555415361954" target="_blank" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="index.html#home" class="logo" style="display: flex; flex-direction: row;">
+              <!-- Image tag -->
+              <img src="image/logo.png"  style="vertical-align: middle;max-height: 40px;max-width: 40px;" alt="Healthstyle JAPAN">
+              <!-- Text "Healthstyle JAPAN" -->
+              <span style="vertical-align: middle;"><h3 style="vertical-align: middle;">Healthstyle JAPAN</h3></span>
+            </a>
+            <p>"Healthstyle Japan" fosters well-being through the perfect blend of lifestyle and health.</p>
+            <div class="share">
+                <a href="https://www.facebook.com/healthstylejapan" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/healthstylejapan?igsh=MXB2bXpxNmVvMW4xaw==" target="_blank" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <!-- <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a> -->
+            <a classwindow.open(index.html, _blank);="links"> <i class="fas fa-phone"></i> +88 01328848598 </a>
+            <a onclick="composeEmail('healthstylejapan@gmail.com');" class="links"><i class="fas fa-envelope"></i> healthstylejapan@gmail.com</a>
+            <a class="links"> <i class="fas fa-map-marker-alt"></i> 27/1 West Nakhalpara, Tejgaon, Dhaka-1215 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <!-- <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a> -->
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> web designer </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var form = document.querySelector('.sheetdb-form'); 
+    form.addEventListener("submit", e => { 
+        e.preventDefault(); 
+        fetch(form.action, { 
+            method: "POST", 
+            body: new FormData(document.querySelector(".sheetdb-form"))
+        })
+        .then(response => response.json())
+        .then((data) => {
+            // Display success message
+            alert("You have successfully registered");
+
+            // Close the current window after a short delay (100 milliseconds)
+            // setTimeout(function() {
+            //     window.close();
+            // }, 1);
+            window.location.reload();
+
+            // Open index.html in a new tab
+            // var newWindow = window.open('index.html', '_blank');
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    }); 
+</script>
+
+<script>
+    var form = document.querySelector('.orderdb-form'); 
+    form.addEventListener("submit", e => { 
+        e.preventDefault(); 
+        fetch(form.action, { 
+            method: "POST", 
+            body: new FormData(document.querySelector(".orderdb-form"))
+        })
+        .then(response => response.json())
+        .then((data) => {
+            // Display success message
+            alert("CONGRATULATIONS You have successfully placed your order");
+            window.location.reload();
+        })
+        .catch(error => {
+            console.error("Error:", error);
+        });
+    }); 
+    
+
+
+
+
+</script>
+
+<script>
+  // Find the elements
+  const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+  const shoppingCartNumber = document.querySelector('.shopping-cart-number');
+
+  // Add event listener to each "Add to Cart" button
+  addToCartBtns.forEach(function(btn) {
+    btn.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default link behavior
+
+      // Get the current number from the shopping cart
+      let currentNumber = parseInt(shoppingCartNumber.textContent);
+
+      // Increment the number by 1
+      currentNumber++;
+
+      // Update the number in the shopping cart
+      shoppingCartNumber.textContent = currentNumber;
+    });
+  });
+</script>
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Healthstyle JAPAN </title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/product1.css">
+    <link rel="icon" href="image/favicon.ico" type="image/gif">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html#home" class="logo">
+      <!-- Image tag -->
+      <img src="image/logo.png"  style="vertical-align: middle;max-height: 40px;max-width: 40px;" alt="Healthstyle JAPAN">
+      <!-- Text "Healthstyle JAPAN" -->
+      <span style="vertical-align: middle;">Healthstyle JAPAN</span>
+    </a>
+
+    <nav class="navbar">
+        <a href="index.html#home">home</a>
+        <a href="index.html#products">products</a>
+        <a href="index.html#features">features</a>
+        <!-- <a href="#categories">categories</a> -->
+        <a href="index.html#aboutus">about</a>
+        <a href="index.html#review">review</a>
+        <a href="index.html#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <!-- <div class="box">
+            <i class="fas fa-trash delete-item"></i>
+            <img src="image/11.png" alt="">
+            <div class="content">
+                <h3>Itoen Oi Ocha Instant</h3>
+                <span class="price">BDT 740/-</span>
+                <div class="quantity-controls">
+                    <button class="quantity-btn increase-btn">+</button>
+                    <span class="quantity">Qty: <span class="quantity-value">1</span> </span>
+                    <button class="quantity-btn decrease-btn">-</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash delete-item"></i>
+            <img src="image/22.png" alt="">
+            <div class="content">
+                <h3>Itoen One Pot</h3>
+                <span class="price">BDT 1100/-</span>
+                <div class="quantity-controls">
+                    <button class="quantity-btn increase-btn">+</button>
+                    <span class="quantity">Qty: <span class="quantity-value">1</span> </span>
+                    <button class="quantity-btn decrease-btn">-</button>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash delete-item"></i>
+            <img src="image/33.png" alt="">
+            <div class="content">
+                <h3>Iyemon Genmaicha</h3>
+                <span class="price">BDT 950/-</span>
+                <div class="quantity-controls">
+                    <button class="quantity-btn increase-btn">+</button>
+                    <span class="quantity">Qty: <span class="quantity-value">1</span> </span>
+                    <button class="quantity-btn decrease-btn">-</button>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="total">Total BDT: <span class="total-amount">0</span></div>
+        <a href="#" class="btn checkout-btn">Checkout</a>
+
+    </div>
+
+    <form action="" class="login-form">
+        <i id="cancel" class="far fa-times-circle cancel"></i>
+        <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a id="forgot-btn" href="#">click here</a></p>
+        <p>don't have an account <a id="signup-btn" href="#">create now</a></p>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+    <form action="" class="signup-form">
+        <i id="back-btn" class="fas fa-chevron-left left-icon"></i>
+        <h3>New here ?</h3>
+        <input type="text" placeholder="UserName" class="box" required>
+        <input type="email" placeholder="Email Address" class="box" required>
+        <input type="password" placeholder="Password" class="box" required>
+        <input type="number" placeholder="Phone Number" class="box" required>
+        <input type="number" placeholder="NID Number" class="box" required>
+        <input type="text" placeholder="Reference ID" class="box" required>
+        <input type="text" placeholder="Placement ID" class="box" required>
+        <input type="submit" value="Sign up now" class="btn">
+    </form>
+
+    <form action="" class="forgot-form">
+        <i id="back-btn1" class="fas fa-chevron-left left-icon1"></i>
+        <h3>Forgot Password ?</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="submit" value="Recover now" class="btn">
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- product section start  -->
+<div id="about" class="about-us section">
+        <div  class="item1">
+            <div class="col-lg-6 align-self-center">
+                <div class="left-image">
+                    <img src="image/333.png" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="section-heading">
+                    <h2>Iyemon Genmaicha with Matcha</h2>
+                    <p>Iyemon Genmaicha with Matcha uses tea leaves produced in Kyoto, a world-renowned region for high-quality green tea. Iyemon Genmaicha with Matcha green tea leaves specially make with roasted brown rice. Genmaicha generally has less caffeine and offers a distinctive taste of roasted brown rice. </p><br>
+                    <h5><strong>Health benefits: </strong></h5>
+                        <ul style="padding-left: 50px;">
+                            <li>Helps lose weight</li>
+                            <li>Holds longevity and youth</li>
+                            <li>Helps to make skin bright and shiny</li>
+                            <li>Contains a lot of vitamins</li>
+                            <li>Boost immunity</li>
+                            <li>Reduce inflammation</li>
+                            <li>Rich in antioxidants</li>
+                            <li>lower the risk of atherosclerosis (the hardening of arteries), high blood pressure, and heart disease</li>
+                        </ul><br>
+                    <h5><strong>Contents and Price: </strong></h5>
+                        <ul style="padding-left: 50px;">
+                            <li>2.0 g x 20 bags: 950 TAKA</li>
+                        </ul><br>
+                    <!-- <h5><strong>Recommended daily consumption: </strong></h5>
+                        <ul style="padding-left: 50px;">
+                            <li> 3 to 4 tea bags per day for reducing body fat</li>
+                        </ul><br> -->
+                    <h5><strong>Making: </strong></h5>
+                    <p>Pour 191ml of 87 °C hot water into a cup and place one bag for 30 seconds for less caffeine and 2 minutes to get more caffeine.</p><br>
+                    <p><strong>Storage method:</strong> Avoid high temperatures and humid places</p><br>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- product section ends -->
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <a href="index.html#home" class="logo" style="display: flex; flex-direction: row;">
+              <!-- Image tag -->
+              <img src="image/logo.png"  style="vertical-align: middle;max-height: 40px;max-width: 40px;" alt="Healthstyle JAPAN">
+              <!-- Text "Healthstyle JAPAN" -->
+              <span style="vertical-align: middle;"><h3 style="vertical-align: middle;">Healthstyle JAPAN</h3></span>
+            </a>
+            <p>"Healthstyle Japan" fosters well-being through the perfect blend of lifestyle and health.</p>
+            <div class="share">
+                <a href="https://www.facebook.com/healthstylejapan" target="_blank" class="fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/healthstylejapan?igsh=MXB2bXpxNmVvMW4xaw==" target="_blank" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-youtube"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <!-- <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a> -->
+            <a class="links"> <i class="fas fa-phone"></i> +88 01328848598 </a>
+            <a onclick="composeEmail('healthstylejapan@gmail.com');" class="links"><i class="fas fa-envelope"></i> healthstylejapan@gmail.com</a>
+            <a class="links"> <i class="fas fa-map-marker-alt"></i> 27/1 West Nakhalpara, Tejgaon, Dhaka-1215 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html#home" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="index.html#features" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="index.html#products" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <!-- <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a> -->
+            <a href="index.html#aboutus" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="index.html#blogs" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> web designer </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
